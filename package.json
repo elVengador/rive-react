@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "prepare": "bunchee src/index.ts -m --no-sourcemap",
     "build": "bunchee src/index.ts -m --no-sourcemap",
     "dev": "watch 'npm run build' src",
     "lint": "eslint -c .eslintrc.js 'src/**/*{.ts,.tsx}'",
